@@ -17,15 +17,20 @@ constructor() {
     .then(response => response.data);
   };
 
-  addPet = (data) => {
+  addPet = data => {
     return this.service.post('/add', {data})
     .then(response => response.data);
   };
 
 
-  petDetails = (petId) => {
-    console.log("the pet id ---- ", petId);
+  petDetails = petId => {
     return this.service.get(`/details/${petId}`)
+    .then(response => response.data);
+  };
+
+  petSeed = () => {
+    console.log("seeding db");
+    return this.service.get(`/seed`)
     .then(response => response.data);
   };
 
