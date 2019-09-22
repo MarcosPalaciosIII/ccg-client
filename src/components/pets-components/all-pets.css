@@ -1,0 +1,208 @@
+/* filter section */
+
+.filterSection {
+  background-color: #45515d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98.8%;
+  height: 3vw;
+  margin-bottom: 1vw;
+}
+
+.filterSection div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.filterSection > div:nth-child(1) {
+  width: 10%;
+  padding-left: 1vw;
+}
+
+.filterSection > div:nth-child(1) > h5 {
+  margin: 0;
+}
+
+.filterSection > div:nth-child(2) {
+  padding-right: 1vw;
+  width: 78%;
+}
+
+.filterSection > div:nth-child(2) div > h6 {
+  font-weight: bolder;
+  margin-right: 0.2vw;
+}
+
+
+/* ----- End of Filter Section ----- */
+
+
+/* Main Pets display section */
+
+#all-pets-main {
+  padding: 0 16vw;
+  background-color: #F1F1F1;
+  padding-top: 10vw;
+}
+
+#all-pets-main > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 2.3vw;
+}
+
+#all-pets-main > div:nth-child(1) > h4 {
+  color: #45515D;
+  margin-bottom: 0;
+}
+
+#all-pets-main > div:nth-child(1) > h2 {
+  color: #45515D;
+  font-size: 4vw;
+  margin-top: 0;
+}
+
+
+#all-pets-main > div:nth-child(3) {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+
+/* ------ End of Main Pet Display Section ------- */
+
+
+
+/* pet card display section */
+
+.petCard {
+  background-color: white;
+  height: 29vw;
+  width: 22vw;
+  margin: 0 0.6vw 3vw 0;
+}
+
+.petCard > a {
+  text-decoration: none;
+  color: black;
+}
+
+.petCard > a > div {
+  width: 100%;
+  height: 100%;
+}
+
+.petCard > a > div > div:nth-child(1) {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.petCard > a > div > div > img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.petCard > a > div > div > img:hover {
+  transform: scale(1.1);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease-in 0.5s;
+}
+
+.petCard > a > div > div:nth-child(2) {
+  font-size: 1.22vw;
+  border-bottom: 1px dotted #45515d;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.petCard > a > div > div:nth-child(2) h5 {
+  margin: 0.7vw 0;
+  font-weight: 300;
+}
+
+.petCard > a > div > div:nth-child(3) {
+  display: flex;
+  font-size: 1.7vw;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.petCard > a > div > div:nth-child(3) h3 {
+  margin: 0.7vw 0.5vw 0 0;
+  text-align: start;
+}
+
+.petCard > a > div > div:nth-child(3) span {
+  font-weight: 400;
+}
+
+.petCard > a > div > div:nth-child(4) {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.locationText {
+  color: white;
+  background-color: #d45224;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding-right: 0.8vw;
+  border-radius: 4px;
+  margin-top: 1vw;
+}
+
+.locationText img {
+  width: 1vw;
+}
+
+/* --------- End of pet card display section --------- */
+
+
+/* Pet Details Section */
+
+.petDetailsCard > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16vw
+}
+
+.petDetailsCard > div:nth-child(1) > div:nth-child(1) {
+  width: 30vw;
+  height: 30vw;
+}
+
+.petDetailsCard > div:nth-child(1) > div:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.petDetailsCard > div > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.petDetailsCard > div > div:nth-child(2) > div > h5 {
+  margin: 1vw 0;
+}
